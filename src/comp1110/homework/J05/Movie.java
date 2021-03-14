@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Movie {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        String movieName = input.next();
+        String movieName = input.nextLine();
         int movieLength = input.nextInt();
 
         int hour = movieLength / 60;
@@ -25,18 +25,18 @@ public class Movie {
             if (minute == 0) {
                 System.out.println(movieName + " runs for " + hour + " hour");
             } else if (minute == 1) {
-                System.out.println(movieName + " runs for " + hour + " hour" + minute + " minute");
+                System.out.println(movieName + " runs for " + hour + " hour and " + minute + " minute");
             } else if (minute > 1) {
-                System.out.println(movieName + " runs for " + hour + " hour" + minute + " minutes");
+                System.out.println(movieName + " runs for " + hour + " hour and " + minute + " minutes");
             }
 
         } else if (hour > 1) {
             if (minute == 0) {
                 System.out.println(movieName + " runs for " + hour + " hours");
             } else if (minute == 1) {
-                System.out.println(movieName + " runs for " + hour + " hours" + minute + " minute");
+                System.out.println(movieName + " runs for " + hour + " hours and " + minute + " minute");
             } else if (minute > 1) {
-                System.out.println(movieName + " runs for " + hour + " hours" + minute + " minutes");
+                System.out.println(movieName + " runs for " + hour + " hours and " + minute + " minutes");
 
             }
 
