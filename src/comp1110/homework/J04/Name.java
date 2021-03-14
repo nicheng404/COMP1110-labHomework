@@ -9,10 +9,11 @@ public class Name {
         /*
         String upperCase= new String();
         name = upperCase.toUpperCase(name);
-
         */
-        String name = initialName.toUpperCase();
-        System.out.print(name);
+        String upperCaseName = initialName.toUpperCase();
+        System.out.println(upperCaseName);
+
+        System.out.println(upperCaseName.length());
 
     }
 }
