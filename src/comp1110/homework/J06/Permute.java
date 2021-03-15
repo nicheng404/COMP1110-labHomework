@@ -29,7 +29,7 @@ public class Permute {
                 }
             }
 
-
+            //判断count与原来string A长度是否一致，一致代表charB中每个都被改了0，输出yes
             if (count==lengthA){
                 System.out.println("Yes");
             } else {
