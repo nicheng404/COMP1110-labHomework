@@ -20,7 +20,7 @@ public class Ones {
         //辨别1并累计
         int count = 0;
         for (int n : intArray){
-            if (n % 2 != 0){
+            if (n == 1){
                 count++;
             }
         }

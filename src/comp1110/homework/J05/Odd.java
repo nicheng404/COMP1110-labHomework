@@ -12,7 +12,7 @@ public class Odd {
         Scanner input = new Scanner(System.in);
         int number = input.nextInt();
 
-        if (isOdd(number)){
+        if (Odd.isOdd(number)){
             System.out.println(number + " is odd");
         }else {
             System.out.println(number + " is even");

@@ -12,6 +12,7 @@ public class Permute {
         int lengthB= B.length();
 
         //判断长度
+            //长度一致：
         if (lengthA==lengthB){
             //转换char array
             char[] arrayCharA= A.toCharArray();
@@ -23,16 +24,16 @@ public class Permute {
                 for (int j=0; j < arrayCharB.length; j++){
                     if (arrayCharA[i] == arrayCharB[j]){//比较位置char
                         arrayCharB[j]='0';//相等则改0
-                        count++; //count+
+                        count++; //count++
                         break;//break内层循环
                     }
                 }
             }
 
-            //判断count与原来string A长度是否一致，一致代表charB中每个都被改了0，输出yes
+            //判断count与原来string A长度是否一致，一致代表charB中每个都被改了0，则AB全排，输出yes
             if (count==lengthA){
                 System.out.println("Yes");
-            } else {
+            } else {//否则输出No
                 System.out.println("No");
             }
         }/*长度不对直接NO*/ else {

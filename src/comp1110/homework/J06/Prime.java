@@ -10,6 +10,7 @@ public class Prime {
 
         if (x==2){//从2开始
             System.out.println(2);
+
         } else if( x==3){
             System.out.println(2);
             System.out.println(3);
@@ -20,7 +21,7 @@ public class Prime {
 
             for (int i=4; i<=x;i++){
                 int count=0;
-                for (int j=2; j<=Math.sqrt(i);j++){//若不能整除则count+
+                for (int j=2; j<=Math.sqrt(i);j++){//若不能整除则count++
                     if (i%j != 0){
                         count++;
                     }
