@@ -1,9 +1,9 @@
 package comp1110.homework.O01;
 
 public class BMI {
-    String name;
-    double weight;
-    double height;
+    private String name;
+    private double weight;
+    private double height;
 
     public BMI( String name, double height,double weight){
         this.name=name;
