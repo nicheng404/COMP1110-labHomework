@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="X01 RecursiveTreeBaseComplete" type="Application" factoryName="Application">
-    <option name="MAIN_CLASS_NAME" value="comp1110.homework.X01.RecursiveTreeBaseComplete" />
+  <configuration default="false" name="X01 RecursiveTree" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="comp1110.homework.X01.RecursiveTree" />
     <module name="comp1110-homework" />
     <option name="VM_PARAMETERS" value="--module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml,javafx.media" />
     <method v="2">
