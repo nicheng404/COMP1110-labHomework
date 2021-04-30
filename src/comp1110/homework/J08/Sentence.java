@@ -5,7 +5,7 @@ public class Sentence {
     public static class Word{
         String value;
         Type type;
-
+        // enum Type
         public enum Type{
             NOUN,ADJECTIVE,VERB;
         }
@@ -23,22 +23,17 @@ public class Sentence {
         this.words=new Word[size];
     }
 
-    //Outer method
-
-    public Word.Type getType(Word w){
-        return w.type;
-    }
-
-
-
+    //Outer submethods
+    //check rule 1 length
     public boolean validRule1(Sentence s){
         boolean result =true;
-        if (s.words==null||s.words.length==0) {
+        if (s.words==null||s.words.length==0) {//Word[]=null / [].length =0
             result=false;
-        }else{
+        }else{ // (Word[]!=null && [].length!=0)->
+               // check if members are all "" or are all null
             int count =0;
             for (Word w:s.words){
-                if(w.value.length()==0||w.value==null){
+                if(w.value==null||w.value.length()==0){
                     count++;
                 }
             }
@@ -49,6 +44,7 @@ public class Sentence {
         return result;
     }
 
+    // check rule 2 enum
     public boolean validRule2(Sentence s){
         boolean result= true;
         for(int i =0; i<s.words.length-1;i++){
@@ -61,6 +57,7 @@ public class Sentence {
         return result;
     }
 
+    //check rule 3 enum
     public boolean validRule3(Sentence s){
         boolean result =true;
         for(int i =0; i<s.words.length-1;i++){
@@ -75,6 +72,7 @@ public class Sentence {
         return result;
     }
 
+    // check rule 4 enum
     public int numberofVERB (Sentence s){
         int verbs = 0;
         for(Word w:s.words){
@@ -85,13 +83,10 @@ public class Sentence {
         return verbs;
     }
 
-
-
+    // wanted method
     public boolean isValid(){
-
         boolean rule1=this.validRule1(this);
-
-
+        // first check length to avoid >length conditions
         if (rule1){
             boolean rule2= this.validRule2(this);
             boolean rule3=this.validRule3(this);
@@ -103,7 +98,7 @@ public class Sentence {
                 endValid=true;
             }
             return rule2&&rule3&&(numberofVerbs==1)&&endValid;
-        }else{
+        }else{ // rule 1 length is not satisfied
             return false;
         }
 
