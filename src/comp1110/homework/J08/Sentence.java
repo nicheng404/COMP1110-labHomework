@@ -1,7 +1,7 @@
 package comp1110.homework.J08;
 
 public class Sentence {
-
+    //nested static class Word
     public static class Word{
         String value;
         Type type;
