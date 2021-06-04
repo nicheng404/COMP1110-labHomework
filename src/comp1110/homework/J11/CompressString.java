@@ -10,7 +10,7 @@ public class CompressString {
 
         //get length and string->char[]
         char[] givenArray= given.toCharArray();
-        int givenLength=given.length();
+        int givenLength=given.length();//qwqw
 
         //create output StringBuilder
         StringBuilder outputDemo = new StringBuilder();
